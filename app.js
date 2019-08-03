@@ -18,6 +18,15 @@ bot.on('message', msg => {
         msg.channel.send({files:["./img/"+imageNo+".png"]})
         }
 
+    if (msg.content === (prefix+'10抽')) {
+
+              number =10;
+
+              imageNo= Math.floor(Math.random()*(number-1+1))+1;
+
+              msg.channel.send({files:["./img2/"+imageNo+".png"]})
+        }
+
 
 });
 
